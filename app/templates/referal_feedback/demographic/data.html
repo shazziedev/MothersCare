@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}Referal | Data {% endblock title %}
+
+{% block body %}
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    {% include 'top_nav.html' %}
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial:../../partials/_sidebar.html -->
+      {% include 'sidebar.html' %}
+      <!-- partial -->
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+            <!-- insert -->
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Referal & feedback</h4>
+                    <p class="card-description">
+                      Demographics <code>table</code>
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Full Names</th>
+                            <th>Phone Number</th>
+                            <th>Date</th>
+                            <th>Province</th>
+                            <th>District</th>
+                            <th>Health Facility</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Jacob</td>
+                            <td>53275531</td>
+                            <td>12 May 2017</td>
+                            <td>Lusaka</td>
+                            <td>Lusaka</td>
+                            <td>Chawama clinic</td>
+                          </tr>
+                          <tr>
+                            <td>Messsy</td>
+                            <td>53275532</td>
+                            <td>15 May 2017</td>
+                            <td>Central Provice</td>
+                            <td>Mwembeshi</td>
+                            <td>Mwembeshi clinic</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>53275533</td>
+                            <td>14 May 2017</td>
+                            <td>Luapula</td>
+                            <td>Mansa</td>
+                            <td>Mansa General Hospital</td>
+                          </tr>
+                          <tr>
+                            <td>Peter</td>
+                            <td>53275534</td>
+                            <td>16 May 2017</td>
+                            <td>Copperbelt</td>
+                            <td>Ndola</td>
+                            <td>Ndola central clinic</td>
+                          </tr>
+                          <tr>
+                            <td>Dave</td>
+                            <td>53275535</td>
+                            <td>20 May 2017</td>
+                            <td>Lusaka</td>
+                            <td>Lusaka</td>
+                            <td>Chingola clinic</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- end insert  -->
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+{% endblock body %}
+ 

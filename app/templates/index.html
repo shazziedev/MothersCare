@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Mother Care{% endblock title %}
+
+{% block body %}
+    <div class="container-scroller"> 
+        <!-- partial:partials/_navbar.html -->
+        {% include 'top_nav.html' %}
+        <!-- partial -->
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper"> 
+
+            <!-- partial:partials/_sidebar.html -->
+            {% include 'sidebar.html' %}
+            <!-- partial:partials/_sidebar.html -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+{% endblock body %}

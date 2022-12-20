@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Risk Register | Details{% endblock title %}
+
+{% block body %} 
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    {% include 'top_nav.html' %}
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial:../../partials/_sidebar.html -->
+      {% include 'sidebar.html' %}
+      <!-- partial -->
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+            <!-- insert -->
+            <div class="col-12  grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">RISK REGISTER</h4>
+                    <p class="card-description">
+                      Details
+                    </p>
+                    <form class="forms-sample">
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">First ANC visit Details</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Latest ANC visit Details</label>
+                      </div>                      
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Risk Factor Identified</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Action Taken</label>
+                      </div>  
+
+                      <div class="form-group">
+                        <label for="exampleInputEmail3">Date Action Taken</label>
+                        <input type="date" class="form-control" id="exampleFullnames" placeholder="Full Names i.e Idah Kasanya">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword4">Name of SMAG</label>
+                        <input type="text" class="form-control" id="exampleAge" placeholder="Age i.e 25">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword4">Phone Numbers</label>
+                          <input type="text" class="form-control" id="exampleAge" placeholder="Age i.e 3">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword4">Name of Hospital Reffered To</label>
+                          <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 3-5">
+                      </div>      
+                      <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            <!-- end insert  -->
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+{% endblock body %} 

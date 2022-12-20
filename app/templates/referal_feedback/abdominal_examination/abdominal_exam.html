@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block title %}Referal | Abdominal Examination{% endblock title %}
+
+{% block body %}
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    {% include 'top_nav.html' %}
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial:../../partials/_sidebar.html -->
+      {% include 'sidebar.html' %}
+      <!-- partial -->
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+
+
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Abdominal Examination</h4>
+                  <p class="card-description">
+                    General Examination
+                  </p>
+                  <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Symphysio Fundal Height(cm)</label>
+                        <input number="text" class="form-control" id="exampleInputName1" placeholder="i.e 38cm">
+                    </div> 
+                    <div class="form-group">
+                        <label for="exampleInputName1">Abdominal Circumference(cm)</label>
+                        <input number="text" class="form-control" id="exampleInputName1" placeholder="i.e 98cm">
+                    </div> 
+                    <div class="form-group">
+                        <label for="exampleInputName1">Estimated Fetal Weight(grams)</label>
+                        <input number="text" class="form-control" id="exampleInputName1" placeholder="i.e 2500-4000g">
+                    </div> 
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Presentation</label>
+                        <select class="form-control" id="exampleSelectGender">
+                            <option>Cephalic</option>
+                            <option>Breech</option>
+                            <option>Undefined</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Lie</label>
+                        <select class="form-control" id="exampleSelectGender">
+                            <option>Longitudinal</option>
+                            <option>Transverse</option>
+                            <option>Oblique</option>
+                            <option>Undefined</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Contractions</label>
+                        <select class="form-control" id="exampleSelectGender">
+                            <option>Mild(20secs)</option>
+                            <option>Moderate(20-40secs)</option>
+                            <option>Strong(40-60secs)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Investigations done</label>
+                        <input type="text" class="form-control" id="examplefbc" placeholder="i.e 5.2*10">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Speculum Examination</label>
+                        <input type="text" class="form-control" id="exampleHealthFacility" placeholder="i.e negative/positive">
+                    </div>
+                    <p>Digital Vaginal Examination</p>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Membranes</label>
+                        <select class="form-control" id="exampleSelectruptured">
+                            <option>Intact</option>
+                            <option>Ruptured</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Cervix</label>
+                        <input type="text" class="form-control" id="exampleHealthFacility" placeholder="i.e 4-5cm">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Station</label>
+                        <select class="form-control" id="exampleSelect+1">
+                            <option>Above IS</option>
+                            <option>Station 0</option>
+                            <option>+1</option>
+                            <option>+2</option>
+                            <option>+3</option>
+                            <option>+4</option>
+                            <option>+5</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Liquour</label>
+                        <select class="form-control" id="exampleSelectClear">
+                            <option>Clear</option>
+                            <option>Blood Stained</option>
+                            <option>Meconeum Stained</option>
+                            <option>Meconeum grade 1</option>
+                            <option>Meconeum grade 2</option>
+                            <option>Meconeum grade 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Caput</label>
+                        <select class="form-control" id="exampleSelectGender">
+                            <option>Nil</option>
+                            <option>+</option>
+                            <option>++</option>
+                            <option>+++</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Moulding</label>
+                        <select class="form-control" id="exampleSelectGender">
+                            <option>Nil</option>
+                            <option>+</option>
+                            <option>++</option>
+                            <option>+++</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Cord</label>
+                            <select class="form-control" id="exampleSelectGender">
+                            <option>Not felt</option>
+                            <option>Palpable & Pulsating</option>
+                            <option>Palpable & Not Pulsating</option>
+                        </select>
+                    </div>  
+
+
+                    <div class="form-group">
+                      <label for="exampleInputName1">Provisional Diagnosis</label>
+                      <input Text="text" class="form-control" id="exampleInputName1" placeholder="i.e Prolonged First Stage of Labour">
+                    </div> 
+                    <div class="form-group">
+                      <label for="exampleInputName1">Treatment</label>
+                      <input Text="text" class="form-control" id="exampleInputName1" placeholder="i.e Vacuum delivery conducted">
+                    </div> 
+                    <div class="form-group">
+                      <label for="exampleSelectGender">Antenatal Card</label>
+                        <select class="form-control" id="exampleSelectGender">
+                          <option>Yes</option>
+                          <option>No</option>
+                      </select>
+                    </div> 
+                    <div class="form-group">
+                      <label for="exampleSelectGender">Partograph</label>
+                      <select class="form-control" id="exampleSelectGender">
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                      </div>
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                </form>
+                </div>
+              </div>
+            </div>    
+
+
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+{% endblock body %}

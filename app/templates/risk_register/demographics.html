@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block title %}Risk Register | Demographics{% endblock title %}
+
+{% block body %}
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    {% include 'top_nav.html' %}
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial:partials/_sidebar.html -->
+      {% include 'sidebar.html' %}
+      <!-- partial:partials/_sidebar.html -->
+
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">RISK REGISTER</h4>
+                  <p class="card-description">
+                    Demographics
+                  </p>
+                  <form class="forms-sample" action="./demographics2.html">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Date</label>
+                        <input type="date" class="form-control" id="exampleInputName1" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Province</label>
+                          <select class="form-control" id="exampleSelectGender">
+                            <option>Central Province</option>
+                            <option>Copperbelt Province</option>
+                            <option>Eastern Province</option>
+                            <option>Luapula Province</option>
+                            <option>Lusaka Province</option>
+                            <option>Muchinga Province</option>
+                            <option>Northern Province</option>
+                            <option>North-Western Province</option>
+                            <option>Southern Province</option>
+                            <option>Western Province</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Province</label>
+                        <select class="form-control" id="exampleSelectGender">
+                            <option>Chilanga District</option>
+                            <option>Chongwe District</option>
+                            <option>Kafue District</option>
+                            <option>Luangwa District</option>
+                            <option>Lusaka District</option>
+                            <option>Rufunsa District</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Health Facility</label>
+                        <input type="text" class="form-control" id="exampleHealthFacility" placeholder="i.e chawama clinic">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3">Full Names</label>
+                      <input type="text" class="form-control" id="exampleFullnames" placeholder="Full Names i.e Idah Kasanya">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword4">Age</label>
+                      <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 25">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Parity</label>
+                        <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 3">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Parity Range</label>
+                        <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 3-5">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Gravid</label>
+                        <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 2">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Gravid Range</label>
+                        <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 2-5">
+                    </div>   
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">LNMP</label>
+                        <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 2-5">
+                    </div>    
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">EDD</label>
+                        <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e 2-5">
+                    </div> 
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Next of kin</label>
+                        <input type="text" class="form-control" id="exampleAge" placeholder="Age i.e martin lomber">
+                    </div>  
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Phone Number</label>
+                        <input type="number" class="form-control" id="exampleAge" placeholder="Age i.e +260xxxxxxxxx">
+                    </div>      
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+{% endblock body %}
